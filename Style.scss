@@ -1,8 +1,24 @@
+$p1-cloro:orchid;
+$h1-1-color:aqua;
+.text-box{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10%;
+    border: 5px solid gray;
+    box-sizing: border-box;
+}
 .foo {
-    background-color: yellowgreen; 
+    @extend .text-box;
+    width: 600px;
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url("file:///home/melonde-zeus/accets/photo1.jpg"); 
+    h1{
+        color: $h1-1-color;
+    }
     p {
-      background-color: aqua; 
+      color: $p1-cloro;
       font-style: italic;
     }
-
 }
